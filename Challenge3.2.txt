@@ -1,0 +1,17 @@
+python
+class Student:
+    def __init__(self, name, roll_number, cgpa):
+        self.name = name
+        self.roll_number = roll_number
+        self.cgpa = cgpa
+
+students = [
+    Student('John', 'A001', 3.8),
+    Student('Alice', 'A002', 3.5),
+    Student('Bob', 'A003', 3.9),
+    Student('Emily', 'A004', 3.7)
+]
+
+sorted_students = sort_students(students)
+for student in sorted_students:
+    print(student.name, student.roll_number, student.cgpa) 
